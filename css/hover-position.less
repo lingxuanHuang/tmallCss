@@ -1,0 +1,38 @@
+.hc-position{
+  width: 100%;
+  >li,>div,.hc-position-bg{
+    position: relative;
+    min-height: 20px;
+   >div,>.hc-position-devw{//developed width
+      position:relative;
+      top:0;
+      left: 0;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      >a,>span,>.hc-position-mark{
+        display: block;
+        width: 200%;
+        >span,>.hc-position-deviation{
+          position: relative;
+          left:0;
+          &.transition{
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+    &:hover{
+      >div,>.hc-position-devw{
+        >a,>span,>.hc-position-mark{
+          span,>.hc-position-deviation{ left:-50%;}
+        }
+      }
+     }
+    &:after{
+      display: block;
+      content: '';
+      clear: both;
+    }
+  }
+}

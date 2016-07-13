@@ -1,0 +1,409 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 14px;
+  line-height: 30px;
+}
+* {
+  font-family: 'microsoft Yahei';
+}
+i,
+em {
+  font-style: normal;
+}
+img {
+  vertical-align: top;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+input,
+textarea,
+select {
+  padding: 0 5px;
+  border: solid 1px #e4e4e4;
+  border-radius: 4px;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.f-left {
+  float: left !important;
+}
+.f-right {
+  float: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.disable,
+.disabled {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+.inline-block {
+  display: inline-block !important;
+  float: none !important;
+}
+.block {
+  display: block !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.absolute {
+  position: absolute !important;
+}
+.hide {
+  display: none !important;
+}
+.bg-white {
+  background: #FFF;
+}
+.bg-black {
+  background: #000;
+}
+.color-white {
+  color: #FFF;
+}
+.color-black {
+  color: #000;
+}
+.btn {
+  display: inline-block;
+  padding: 0  10px;
+  border-radius: 100px ;
+  margin: 5px;
+  border: solid 1px #ddd;
+}
+.gc-1 {
+  width: 8.33333333%;
+}
+.gc-2 {
+  width: 16.66666667%;
+}
+.gc-3 {
+  width: 25%;
+}
+.gc-4 {
+  width: 33.33333333%;
+}
+.gc-5 {
+  width: 41.66666667%;
+}
+.gc-6 {
+  width: 50%;
+}
+.gc-7 {
+  width: 58.33333333%;
+}
+.gc-8 {
+  width: 66.66666667%;
+}
+.gc-9 {
+  width: 75%;
+}
+.gc-10 {
+  width: 83.33333333%;
+}
+.gc-11 {
+  width: 91.66666667%;
+}
+.gc-12 {
+  width: 100%;
+}
+.gc-1,.gc-2,.gc-3,.gc-4,.gc-5,.gc-6,.gc-7,.gc-8,.gc-9,.gc-10,.gc-11,.gc-12 {
+  position: relative;
+  display: block;
+  float: left;
+}
+.gc-1:after,.gc-2:after,.gc-3:after,.gc-4:after,.gc-5:after,.gc-6:after,.gc-7:after,.gc-8:after,.gc-9:after,.gc-10:after,.gc-11:after,.gc-12:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.gc-1 img,.gc-2 img,.gc-3 img,.gc-4 img,.gc-5 img,.gc-6 img,.gc-7 img,.gc-8 img,.gc-9 img,.gc-10 img,.gc-11 img,.gc-12 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.navigation {
+  position: relative;
+  display: table;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.navigation:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.navigation li,
+.navigation span,
+.navigation a {
+  transition: all 0.3s;
+  display: table-cell;
+}
+.navigation li a,
+.navigation span a,
+.navigation a a {
+  display: block;
+}
+.navigation li + li,
+.navigation span + span,
+.navigation a + a {
+  margin-left: -1px;
+}
+.navigation.nav-default li,
+.navigation.nav-default span,
+.navigation.nav-default a {
+  border: solid 1px;
+}
+.navigation.nav-default li a,
+.navigation.nav-default span a,
+.navigation.nav-default a a {
+  padding: 6px 10px;
+}
+.navigation.nav-default li:hover,
+.navigation.nav-default span:hover,
+.navigation.nav-default a:hover,
+.navigation.nav-default li:focus,
+.navigation.nav-default span:focus,
+.navigation.nav-default a:focus {
+  background: #e4e4e4;
+}
+.navigation.nav-radius li,
+.navigation.nav-radius span,
+.navigation.nav-radius a {
+  color: #333;
+  background: #93d496;
+  border: solid 1px #333;
+  border-radius: 4px;
+  line-height: 2em;
+}
+.navigation.nav-img li,
+.navigation.nav-img span {
+  margin-left: 0;
+}
+.hc-opacity {
+  width: 100%;
+}
+.hc-opacity > li,
+.hc-opacity > div,
+.hc-opacity > .hc-opacity-bg {
+  background: #000;
+}
+.hc-opacity > li img,
+.hc-opacity > div img,
+.hc-opacity > .hc-opacity-bg img,
+.hc-opacity > li .hc-opacity-mark,
+.hc-opacity > div .hc-opacity-mark,
+.hc-opacity > .hc-opacity-bg .hc-opacity-mark {
+  display: block;
+  transition: all 0.4s;
+}
+.hc-opacity > li img:hover,
+.hc-opacity > div img:hover,
+.hc-opacity > .hc-opacity-bg img:hover,
+.hc-opacity > li .hc-opacity-mark:hover,
+.hc-opacity > div .hc-opacity-mark:hover,
+.hc-opacity > .hc-opacity-bg .hc-opacity-mark:hover {
+  opacity: 0.75;
+}
+.hc-position {
+  width: 100%;
+}
+.hc-position > li,
+.hc-position > div,
+.hc-position .hc-position-bg {
+  position: relative;
+  min-height: 20px;
+}
+.hc-position > li > div,
+.hc-position > div > div,
+.hc-position .hc-position-bg > div,
+.hc-position > li > .hc-position-devw,
+.hc-position > div > .hc-position-devw,
+.hc-position .hc-position-bg > .hc-position-devw {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.hc-position > li > div > a,
+.hc-position > div > div > a,
+.hc-position .hc-position-bg > div > a,
+.hc-position > li > .hc-position-devw > a,
+.hc-position > div > .hc-position-devw > a,
+.hc-position .hc-position-bg > .hc-position-devw > a,
+.hc-position > li > div > span,
+.hc-position > div > div > span,
+.hc-position .hc-position-bg > div > span,
+.hc-position > li > .hc-position-devw > span,
+.hc-position > div > .hc-position-devw > span,
+.hc-position .hc-position-bg > .hc-position-devw > span,
+.hc-position > li > div > .hc-position-mark,
+.hc-position > div > div > .hc-position-mark,
+.hc-position .hc-position-bg > div > .hc-position-mark,
+.hc-position > li > .hc-position-devw > .hc-position-mark,
+.hc-position > div > .hc-position-devw > .hc-position-mark,
+.hc-position .hc-position-bg > .hc-position-devw > .hc-position-mark {
+  display: block;
+  width: 200%;
+}
+.hc-position > li > div > a > span,
+.hc-position > div > div > a > span,
+.hc-position .hc-position-bg > div > a > span,
+.hc-position > li > .hc-position-devw > a > span,
+.hc-position > div > .hc-position-devw > a > span,
+.hc-position .hc-position-bg > .hc-position-devw > a > span,
+.hc-position > li > div > span > span,
+.hc-position > div > div > span > span,
+.hc-position .hc-position-bg > div > span > span,
+.hc-position > li > .hc-position-devw > span > span,
+.hc-position > div > .hc-position-devw > span > span,
+.hc-position .hc-position-bg > .hc-position-devw > span > span,
+.hc-position > li > div > .hc-position-mark > span,
+.hc-position > div > div > .hc-position-mark > span,
+.hc-position .hc-position-bg > div > .hc-position-mark > span,
+.hc-position > li > .hc-position-devw > .hc-position-mark > span,
+.hc-position > div > .hc-position-devw > .hc-position-mark > span,
+.hc-position .hc-position-bg > .hc-position-devw > .hc-position-mark > span,
+.hc-position > li > div > a > .hc-position-deviation,
+.hc-position > div > div > a > .hc-position-deviation,
+.hc-position .hc-position-bg > div > a > .hc-position-deviation,
+.hc-position > li > .hc-position-devw > a > .hc-position-deviation,
+.hc-position > div > .hc-position-devw > a > .hc-position-deviation,
+.hc-position .hc-position-bg > .hc-position-devw > a > .hc-position-deviation,
+.hc-position > li > div > span > .hc-position-deviation,
+.hc-position > div > div > span > .hc-position-deviation,
+.hc-position .hc-position-bg > div > span > .hc-position-deviation,
+.hc-position > li > .hc-position-devw > span > .hc-position-deviation,
+.hc-position > div > .hc-position-devw > span > .hc-position-deviation,
+.hc-position .hc-position-bg > .hc-position-devw > span > .hc-position-deviation,
+.hc-position > li > div > .hc-position-mark > .hc-position-deviation,
+.hc-position > div > div > .hc-position-mark > .hc-position-deviation,
+.hc-position .hc-position-bg > div > .hc-position-mark > .hc-position-deviation,
+.hc-position > li > .hc-position-devw > .hc-position-mark > .hc-position-deviation,
+.hc-position > div > .hc-position-devw > .hc-position-mark > .hc-position-deviation,
+.hc-position .hc-position-bg > .hc-position-devw > .hc-position-mark > .hc-position-deviation {
+  position: relative;
+  left: 0;
+}
+.hc-position > li > div > a > span.transition,
+.hc-position > div > div > a > span.transition,
+.hc-position .hc-position-bg > div > a > span.transition,
+.hc-position > li > .hc-position-devw > a > span.transition,
+.hc-position > div > .hc-position-devw > a > span.transition,
+.hc-position .hc-position-bg > .hc-position-devw > a > span.transition,
+.hc-position > li > div > span > span.transition,
+.hc-position > div > div > span > span.transition,
+.hc-position .hc-position-bg > div > span > span.transition,
+.hc-position > li > .hc-position-devw > span > span.transition,
+.hc-position > div > .hc-position-devw > span > span.transition,
+.hc-position .hc-position-bg > .hc-position-devw > span > span.transition,
+.hc-position > li > div > .hc-position-mark > span.transition,
+.hc-position > div > div > .hc-position-mark > span.transition,
+.hc-position .hc-position-bg > div > .hc-position-mark > span.transition,
+.hc-position > li > .hc-position-devw > .hc-position-mark > span.transition,
+.hc-position > div > .hc-position-devw > .hc-position-mark > span.transition,
+.hc-position .hc-position-bg > .hc-position-devw > .hc-position-mark > span.transition,
+.hc-position > li > div > a > .hc-position-deviation.transition,
+.hc-position > div > div > a > .hc-position-deviation.transition,
+.hc-position .hc-position-bg > div > a > .hc-position-deviation.transition,
+.hc-position > li > .hc-position-devw > a > .hc-position-deviation.transition,
+.hc-position > div > .hc-position-devw > a > .hc-position-deviation.transition,
+.hc-position .hc-position-bg > .hc-position-devw > a > .hc-position-deviation.transition,
+.hc-position > li > div > span > .hc-position-deviation.transition,
+.hc-position > div > div > span > .hc-position-deviation.transition,
+.hc-position .hc-position-bg > div > span > .hc-position-deviation.transition,
+.hc-position > li > .hc-position-devw > span > .hc-position-deviation.transition,
+.hc-position > div > .hc-position-devw > span > .hc-position-deviation.transition,
+.hc-position .hc-position-bg > .hc-position-devw > span > .hc-position-deviation.transition,
+.hc-position > li > div > .hc-position-mark > .hc-position-deviation.transition,
+.hc-position > div > div > .hc-position-mark > .hc-position-deviation.transition,
+.hc-position .hc-position-bg > div > .hc-position-mark > .hc-position-deviation.transition,
+.hc-position > li > .hc-position-devw > .hc-position-mark > .hc-position-deviation.transition,
+.hc-position > div > .hc-position-devw > .hc-position-mark > .hc-position-deviation.transition,
+.hc-position .hc-position-bg > .hc-position-devw > .hc-position-mark > .hc-position-deviation.transition {
+  transition: all 0.3s;
+}
+.hc-position > li:hover > div > a span,
+.hc-position > div:hover > div > a span,
+.hc-position .hc-position-bg:hover > div > a span,
+.hc-position > li:hover > .hc-position-devw > a span,
+.hc-position > div:hover > .hc-position-devw > a span,
+.hc-position .hc-position-bg:hover > .hc-position-devw > a span,
+.hc-position > li:hover > div > span span,
+.hc-position > div:hover > div > span span,
+.hc-position .hc-position-bg:hover > div > span span,
+.hc-position > li:hover > .hc-position-devw > span span,
+.hc-position > div:hover > .hc-position-devw > span span,
+.hc-position .hc-position-bg:hover > .hc-position-devw > span span,
+.hc-position > li:hover > div > .hc-position-mark span,
+.hc-position > div:hover > div > .hc-position-mark span,
+.hc-position .hc-position-bg:hover > div > .hc-position-mark span,
+.hc-position > li:hover > .hc-position-devw > .hc-position-mark span,
+.hc-position > div:hover > .hc-position-devw > .hc-position-mark span,
+.hc-position .hc-position-bg:hover > .hc-position-devw > .hc-position-mark span,
+.hc-position > li:hover > div > a > .hc-position-deviation,
+.hc-position > div:hover > div > a > .hc-position-deviation,
+.hc-position .hc-position-bg:hover > div > a > .hc-position-deviation,
+.hc-position > li:hover > .hc-position-devw > a > .hc-position-deviation,
+.hc-position > div:hover > .hc-position-devw > a > .hc-position-deviation,
+.hc-position .hc-position-bg:hover > .hc-position-devw > a > .hc-position-deviation,
+.hc-position > li:hover > div > span > .hc-position-deviation,
+.hc-position > div:hover > div > span > .hc-position-deviation,
+.hc-position .hc-position-bg:hover > div > span > .hc-position-deviation,
+.hc-position > li:hover > .hc-position-devw > span > .hc-position-deviation,
+.hc-position > div:hover > .hc-position-devw > span > .hc-position-deviation,
+.hc-position .hc-position-bg:hover > .hc-position-devw > span > .hc-position-deviation,
+.hc-position > li:hover > div > .hc-position-mark > .hc-position-deviation,
+.hc-position > div:hover > div > .hc-position-mark > .hc-position-deviation,
+.hc-position .hc-position-bg:hover > div > .hc-position-mark > .hc-position-deviation,
+.hc-position > li:hover > .hc-position-devw > .hc-position-mark > .hc-position-deviation,
+.hc-position > div:hover > .hc-position-devw > .hc-position-mark > .hc-position-deviation,
+.hc-position .hc-position-bg:hover > .hc-position-devw > .hc-position-mark > .hc-position-deviation {
+  left: -50%;
+}
+.hc-position > li:after,
+.hc-position > div:after,
+.hc-position .hc-position-bg:after {
+  display: block;
+  content: '';
+  clear: both;
+}

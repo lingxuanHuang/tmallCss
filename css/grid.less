@@ -1,0 +1,59 @@
+
+.grid(@index){
+ @item:~".gc-@{index}";//grid-common-index
+ @itemAfter:~".gc-@{index}:after";
+@itemImg:~".gc-@{index} img";
+ //计算网格宽度
+ @{item}{
+  width:(100% / @grid-count)*@index;
+ }
+
+ //进入循环
+ .grid(@index+1,@item,@itemAfter,@itemImg);
+}
+
+.grid(@index,@list,@afterList,@imgList)when(@index =< @grid-count){
+
+ //class
+ @item:~".gc-@{index}";
+ @itemAfter:~".gc-@{index}:after";
+ @itemImg:~".gc-@{index} img";
+
+
+ //计算网格宽度
+ @{item}{
+  width:(100% / @grid-count)*@index;
+ }
+
+
+ //进入下一循环
+ .grid(@index+1,~"@{list},@{item}",~"@{afterList},@{itemAfter}",~"@{imgList},@{itemImg}");
+}
+//-------目的：最终输出的@list值为
+//.gc-1,.gc-2,.gc-3,.gc-4,.gc-5,.gc-6,.gc-7,.gc-8,.gc-9,.gc-10,.gc-11,.gc-12 ，
+//**************************************************************
+//此时index为11就会执行以下函数，将所有的相应class都带上统一css”
+//**************************************************************
+.grid(@index,@list,@afterList,@imgList) when(@index>@grid-count){
+ @{list}{
+  position: relative;
+  display: block;
+  float: left;
+ }
+@{afterList}{
+ display: block;
+ content:'';
+ clear: both;
+}
+ @{imgList}{
+  max-width: 100%;
+  max-height: 100%;
+ }
+}
+
+
+//**************************************************************
+//自此，栅格系统中统一css样式完成
+//**************************************************************
+
+.grid(1);
