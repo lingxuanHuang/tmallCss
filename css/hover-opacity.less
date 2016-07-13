@@ -1,14 +1,17 @@
 .hc-opacity{
-  width: 100%;
-  >li, >div, >.hc-opacity-bg{
-    background: #000;
-    img, .hc-opacity-mark{
-      display: block;
-      transition: all 0.4s;
-      &:hover{
+  >li,>div,>span,>a{
+    display: block;
+    transition: all 0.4s;
+    &:hover{
         opacity: 0.75;
-      }
     }
   }
+
+  &:after{
+    display: block;
+    content:"";
+    clear: both;
+  }
+
 }
 //hover change opacity
