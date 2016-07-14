@@ -54,40 +54,43 @@ select {
   clear: both;
 }
 .f-left {
-  float: left !important;
+  float: left;
 }
 .f-right {
-  float: right !important;
+  float: right;
 }
 .text-left {
-  text-align: left !important;
+  text-align: left;
 }
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 .text-center {
-  text-align: center !important;
+  text-align: center ;
 }
 .disable,
 .disabled {
-  pointer-events: none !important;
-  opacity: 0.5 !important;
+  pointer-events: none ;
+  opacity: 0.5 ;
 }
 .inline-block {
-  display: inline-block !important;
-  float: none !important;
+  display: inline-block;
+  float: none ;
 }
 .block {
-  display: block !important;
+  display: block ;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 .absolute {
-  position: absolute !important;
+  position: absolute ;
 }
 .hide {
-  display: none !important;
+  display: none ;
+}
+.visi-hide {
+  visibility: hidden;
 }
 .bg-white {
   background: #FFF;

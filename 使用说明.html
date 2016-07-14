@@ -8,9 +8,8 @@
 </head>
 <body class="gc-8">
 <div class="utilities">
-    <h2 class="gc-12">//共用样式</h2>
-
-    1、
+  <h2 class="gc-12">//共用样式</h2>
+  1、
 <div class="clearfix">
     <div class="f-left">我是左浮动</div>
 </div>
@@ -88,6 +87,62 @@
      &lt;div class="bg-black bg-white color-white color-black"&gt; 背景色、字体色定义&lt;/div&gt;
     </pre>
 
+    9、
+    <p class="clearfix">
+     <span class="btn">圆角按钮</span>
+        <span class="btn">圆角按钮</span>
+        <span class="btn">圆角按钮</span>
+        <span class="btn">圆角按钮</span>
+        <span class="btn">圆角按钮</span>
+    </p>
+    <pre>
+     &lt;span class="btn"&gt; 圆角按钮&lt;/span&gt;
+    </pre>
+
+    10、
+    <p class="clearfix">
+        <a href="#" class="btn">我是按钮，我可点击</a>
+        <a href="#" class="btn disabled">我是按钮，我被禁用了</a>
+        <a href="#" class="btn">我是按钮，我可点击</a>
+        <a href="#" class="btn disable">我是按钮，我被禁用了</a>
+        <a href="#" class="btn">我是按钮，我可点击</a>
+    </p>
+    <pre>
+     <span class="notes">&lt;!--disable/disabled都可以，适用于任何标签:div span a li i ....--&gt;</span>
+     &lt;a class="btn"&gt;我是按钮，我可点击&lt;/a&gt;
+     &lt;a class="btn disabled"&gt;我是按钮，我被禁用了&lt;/a&gt;
+     &lt;a class="btn disable"&gt;我是按钮，我被禁用了&lt;/a&gt;
+    </pre>
+    11、
+    <div class="text-center">
+        <div>
+           <span >右侧有小伙伴，他现在是隐身但位子还在->>>></span>
+           <span class="visi-hide">我是小伙伴，我现在是隐身状态</span>
+           <span ><<<<-左侧有小伙伴，他现在是隐身但位子还在</span>
+        </div>
+        <div>
+            <span >右侧有小伙伴，他隐藏了摸不到他->>>></span>
+            <span class="hide">我是小伙伴，我隐藏了，看不到我摸不到我</span>
+            <span ><<<<-左侧有小伙伴，他隐藏了摸不到他</span>
+        </div>
+    </div>
+    <pre>
+ &lt;div class="gc-12"&gt;
+       &lt;span &gt;右侧有小伙伴，他现在是隐身但位子还在-&gt;&gt;&gt;&gt;&lt;/span&gt;
+       &lt;span class="<b>visi-hide</b>"&gt;我是小伙伴，我现在是隐身状态&lt;/span&gt;
+       &lt;span &gt;&lt;&lt;&lt;&lt;-左侧有小伙伴，他现在是隐身但位子还在&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="gc-12"&gt;
+        &lt;span &gt;右侧有小伙伴，他隐藏了摸不到他-&gt;&gt;&gt;&gt;&lt;/span&gt;
+        &lt;span class="<b>hide</b>"&gt;我是小伙伴，我隐藏了，看不到我摸不到我&lt;/span&gt;
+        &lt;span &gt;&lt;&lt;&lt;&lt;-左侧有小伙伴，他隐藏了摸不到他&lt;/span&gt;
+  &lt;/div&gt;
+    </pre>
+
+
+
+
+
 </div>
 
 <div class="gc-12">
@@ -111,24 +166,13 @@
 </pre>
     </h2>
     <div class="navigation">
-        <a>
-            导航
-        </a>
-        <a>
-            导航
-        </a>
-        <a>
-            导航
-        </a>
-        <a>
-            导航
-        </a>
-        <a>
-            导航
-        </a>
-        <a>
-            导航
-        </a>
+        <a> 导航  </a>
+        <a> 导航  </a>
+        <a> 导航  </a>
+        <a> 导航  </a>
+        <a> 导航  </a>
+        <a> 导航  </a>
+        <a> 导航  </a>
     </div>
     <ul class="navigation">
         <li>
@@ -253,8 +297,6 @@
        </div>
    </div>
 
-
-
 <div class="gc-12">
     <h2 class="gc-12">//改变图片
 <pre>
@@ -334,7 +376,6 @@
     </div>
     </div>
 </div>
-
 
 <div class="gc-12">
     <h2 class="gc-12">//12格--栅格系统</h2>
@@ -586,7 +627,8 @@
         </li>
     </ul>
 </div>
-
-
+</div>
 </body>
 </html>
+
+
