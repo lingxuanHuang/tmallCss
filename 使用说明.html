@@ -235,7 +235,7 @@
     <h2 class="gc-12">//改变透明度 </h2>
  <pre class="gc-12">
 &lt;ul class="hc-opacity"&gt;<span class="notes">&lt;!--ul可以用div代替--&gt;</span>
-    &lt;li&gt;<span class="notes">&lt;!--li可以用div,span,a标签&gt;</span>
+    &lt;li class="hc-opacity-mark"&gt;<span class="notes">&lt;!--li可以用div,span,a标签&gt;</span>
            <span class="notes">&lt;这里输入内容&gt;</span>
             <span class="notes"> &lt;!--！！！ 可以输的有 标签&lt;img &gt; &lt;span&gt; &lt;i&gt;&lt;em&gt;--&gt;</span>
             &lt;img src="images/tn.jpg"/&gt;
@@ -245,7 +245,7 @@
 <span class="notes">&lt;!--************************以下是另一种标签写法*********************--&gt;</span>
     <br/>
 &lt;div class="hc-opacity"&gt;<span class="notes">&lt;!--div可以用li代替--&gt;</span>
-    &lt;a&gt;<span class="notes">&lt;!--div可以用li,span,a标签&gt;</span>
+    &lt;a class="hc-opacity-mark"&gt;<span class="notes">&lt;!--div可以用li,span,a标签&gt;</span>
            <span class="notes">&lt;这里输入内容&gt;</span>
             <span class="notes"> &lt;!--！！！ 可以输的有 标签&lt;img &gt; &lt;span&gt; &lt;i&gt;&lt;em&gt;--&gt;</span>
             &lt;img src="images/tn.jpg"/&gt;
@@ -255,31 +255,31 @@
    <div class="gc-12">
        <div class="gc-6">
            <div class="gc-4 hc-opacity bg-black">
-               <a>
+               <a class="hc-opacity-mark">
                    <img src="images/tn.jpg"/>
                </a>
            </div>
            <div class="gc-4 hc-opacity bg-black">
-               <a>
+               <a class="hc-opacity-mark">
                    <img src="images/tn.jpg"/>
                </a>
            </div>
            <div class="gc-4 hc-opacity bg-black">
-               <a>
+               <a class="hc-opacity-mark">
                    <img src="images/tn.jpg"/>
                </a>
            </div>
        </div>
 
        <div class="gc-6 hc-opacity bg-black">
-           <a class="gc-4">
+           <a class="gc-4 hc-opacity-mark">
                <img src="images/tn.jpg"/>
                <div class="bg-white">
                    值是可以多样化的
                </div>
            </a>
 
-           <a class="gc-4">
+           <a class="gc-4 hc-opacity-mark">
                <img src="images/tn.jpg"/>
 
                <div class="bg-white">
@@ -287,7 +287,7 @@
                </div>
            </a>
 
-           <a class="gc-4">
+           <a class="gc-4 hc-opacity-mark">
                <img src="images/tn.jpg"/>
 
                <div class="bg-white">
@@ -301,8 +301,8 @@
     <h2 class="gc-12">//改变图片
 <pre>
 &lt;ul class="hc-position"&gt;<span class="notes">&lt;!-- //可以用div--&gt;</span>
-    &lt;li &gt;<span class="notes">&lt;!-- //可以用div  这里需要控制宽度，可以用网格例: &lt;li class="gc-4"&gt;--&gt;</span>
-        &lt;div&gt;
+    &lt;li class="hc-position-mark"&gt;<span class="notes">&lt;!-- //可以用div  这里需要控制宽度，可以用网格例: &lt;li class="gc-4"&gt;--&gt;</span>
+        &lt;div class="hc-position-content"&gt;
             <span class="notes">&lt;!--这里填入你需要的内容--&gt;</span>
             <span class="notes"> &lt;!--！！！ 可以输的有 标签&lt;img &gt; &lt;span&gt; &lt;i&gt;&lt;em&gt;--&gt;</span>
             &lt;img src="images/tnposition.jpg"/&gt;
@@ -325,22 +325,22 @@
     <div class="gc-12">
         <div class="gc-6">
             <div class="gc-4 hc-position">
-                <div>
-                    <div>
+                <div class="hc-position-mark">
+                    <div class="hc-position-content">
                         <img src="images/tnposition.jpg"/>
                     </div>
                 </div>
             </div>
             <div class="gc-4 hc-position">
-                <div>
-                    <div>
+                <div class="hc-position-mark">
+                    <div class="hc-position-content">
                         <img src="images/tnposition.jpg"/>
                     </div>
                 </div>
             </div>
             <div class="gc-4 hc-position">
-                <div>
-                    <div>
+                <div class="hc-position-mark">
+                    <div class="hc-position-content">
                         <img src="images/tnposition.jpg"/>
                     </div>
                 </div>
@@ -348,8 +348,8 @@
         </div><div class="gc-6">
         <div class="gc-4 ">
             <div class="hc-position _transition">
-                <div>
-                    <div>
+                <div class="hc-position-mark">
+                    <div  class="hc-position-content">
                         <img src="images/tnposition.jpg"/>
                     </div>
                 </div>
@@ -357,8 +357,8 @@
         </div>
         <div class="gc-4">
             <div class="hc-position _transition">
-                <div>
-                    <div>
+                <div class="hc-position-mark">
+                    <div  class="hc-position-content">
                         <img src="images/tnposition.jpg"/>
                     </div>
                 </div>
@@ -366,8 +366,8 @@
         </div>
         <div class="gc-4">
             <div class="hc-position _transition">
-                <div>
-                    <div>
+                <div class="hc-position-mark">
+                    <div  class="hc-position-content">
                         <img src="images/tnposition.jpg"/>
                     </div>
                 </div>
@@ -542,35 +542,35 @@
 <h5>实例3：改变透明度(hc-opacity)的嵌入和改变透明度(hc-position)的嵌入</h5>
     <ul class="gc-12">
         <li class="gc-3 hc-opacity bg-black">
-            <div>
+            <div class="hc-opacity-mark">
                 <img src="images/tn.jpg"/>
             </div>
         </li>
         <li class="gc-3">
             <div class="gc-12">
                 <div class="gc-8 hc-opacity bg-black">
-                    <div>
+                    <div class="hc-opacity-mark">
                         <img src="images/tn.jpg"/>
                     </div>
                 </div>
                 <div class="gc-4 hc-opacity bg-black">
-                    <div>
+                    <div class="hc-opacity-mark">
                         <img src="images/tn.jpg"/>
                     </div>
-                    <div>
+                    <div class="hc-opacity-mark">
                         <img src="images/tn.jpg"/>
                     </div>
                 </div>
             </div>
             <div class="gc-12">
                 <div class="hc-opacity bg-black">
-                    <div class="gc-4">
+                    <div class="gc-4 hc-opacity-mark">
                         <img src="images/tn.jpg"/>
                     </div>
-                    <div class="gc-4">
+                    <div class="gc-4 hc-opacity-mark">
                         <img src="images/tn.jpg"/>
                     </div>
-                    <div class="gc-4">
+                    <div class="gc-4 hc-opacity-mark">
                         <img src="images/tn.jpg"/>
                     </div>
                 </div>
@@ -579,20 +579,20 @@
         <li class="gc-3">
             <div class="gc-12">
                 <div class="gc-8 hc-position _transition">
-                   <div>
-                       <div>
+                   <div class="hc-position-mark">
+                       <div class="hc-position-content">
                            <img src="images/tnposition.jpg"/>
                        </div>
                    </div>
                 </div>
                 <div class="gc-4 hc-position _transition">
-                        <div>
-                            <div class="transition">
+                        <div class="hc-position-mark">
+                            <div class="hc-position-content">
                                 <img src="images/tnposition.jpg"/>
                             </div>
                         </div>
-                        <div><!-- //可以用span-->
-                            <div class="transition">
+                        <div class="hc-position-mark"><!-- //可以用span-->
+                            <div class="hc-position-content">
                                 <img src="images/tnposition.jpg"/>
                             </div>
                         </div>
@@ -600,18 +600,18 @@
             </div>
             <div class="gc-12">
                 <ul class="hc-position _transition">
-                    <li class="gc-4">
-                        <div>
+                    <li class="gc-4 hc-position-mark">
+                        <div class="hc-position-content">
                             <img src="images/tnposition.jpg"/>
                         </div>
                     </li>
-                    <li class="gc-4">
-                        <div>
+                    <li class="gc-4 hc-position-mark">
+                        <div class="hc-position-content">
                             <img src="images/tnposition.jpg"/>
                         </div>
                     </li>
-                    <li class="gc-4">
-                        <div>
+                    <li class="gc-4 hc-position-mark">
+                        <div class="hc-position-content">
                             <img src="images/tnposition.jpg"/>
                         </div>
                     </li>
@@ -619,8 +619,8 @@
             </div>
         </li>
         <li class="gc-3 hc-position _transition">
-            <div>
-                <div>
+            <div class="hc-position-mark">
+                <div class="hc-position-content">
                     <img src="images/tnposition.jpg"/>
                 </div>
             </div>

@@ -1,29 +1,42 @@
 .hc-position{
-  >li,>div,>span,>a{
-    position: relative;
-    min-height: 20px;
-    display: block;
-    overflow: hidden;
-    >div,>a,>span{
+  li,div,span,a{
+    &.hc-position-mark{
+
       position: relative;
-      left:0;
+      min-height: 20px;
       display: block;
-      width: 200%;
-    }
-    &:hover{
-      >div,>a,>span{
-        left:-100%;
+      overflow: hidden;
+      div,a,span{
+        &.hc-position-content{
+          position: relative;
+          left:0;
+          display: block;
+          width: 200%;
+        }
       }
-     }
-    &:after{
-      display: block;
-      content: '';
-      clear: both;
+      &:hover{
+        div,a,span{
+          &.hc-position-content{
+          left:-100%;
+          }
+        }
+      }
+      &:after{
+        display: block;
+        content: '';
+        clear: both;
+      }
     }
+
+
   }
   &._transition{
-    >li,>div,>span,>a{
-      >div,>a,>span{ transition: all 0.3s;}
+    li,div,span,a{
+      &.hc-position-mark{
+        div,a,span{
+          &.hc-position-content{ transition: all 0.3s;}
+        }
+      }
     }
   }
 }

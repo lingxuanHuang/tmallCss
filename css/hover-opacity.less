@@ -1,21 +1,18 @@
 .hc-opacity{
-  >li,>div,>span,>a{
-    display: block;
-    transition: all 0.4s;
-    &:hover{
+  li,div,span,a{
+    &.hc-opacity-mark{
+      display: block;
+      transition: all 0.4s;
+      &:hover{
         opacity: 0.75;
+      }
     }
   }
-
   &:after{
     display: block;
     content:"";
     clear: both;
   }
-
-}
-
-.btn{
 
 }
 //hover change opacity
