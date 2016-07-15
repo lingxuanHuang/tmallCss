@@ -1,41 +1,50 @@
 
 .grid(@index){
  @item:~".gc-@{index}";//grid-common-index
- @itemAfter:~".gc-@{index}:after";
-@itemImg:~".gc-@{index} img";
+ @item-h:~".gch-@{index}";
+ @itemAfter:~".gc-@{index}:after,.gch-@{index}:after";
+@itemImg:~".gc-@{index} img,.gch-@{index} img";
  //计算网格宽度
  @{item}{
   width:(100% / @grid-count)*@index;
  }
+ @{item-h}{
+  height:(100% / @grid-count)*@index;
+ }
 
  //进入循环
- .grid(@index+1,@item,@itemAfter,@itemImg);
+ .grid(@index+1,@item,@item-h,@itemAfter,@itemImg);
 }
 
-.grid(@index,@list,@afterList,@imgList)when(@index =< @grid-count){
+.grid(@index,@list,@list-h,@afterList,@imgList)when(@index =< @grid-count){
 
  //class
  @item:~".gc-@{index}";
- @itemAfter:~".gc-@{index}:after";
- @itemImg:~".gc-@{index} img";
+ @item-h:~".gch-@{index}";
+ @itemAfter:~".gc-@{index}:after,.gch-@{index}:after";
+ @itemImg:~".gc-@{index} img,.gch-@{index} img";
 
 
  //计算网格宽度
  @{item}{
   width:(100% / @grid-count)*@index;
+ }
+ @{item-h}{
+  height:(100% / @grid-count)*@index;
  }
 
 
  //进入下一循环
- .grid(@index+1,~"@{list},@{item}",~"@{afterList},@{itemAfter}",~"@{imgList},@{itemImg}");
+ .grid(@index+1,~"@{list},@{item}",~"@{list-h},@{item-h}",~"@{afterList},@{itemAfter}",~"@{imgList},@{itemImg}");
 }
 //-------目的：最终输出的@list值为
 //.gc-1,.gc-2,.gc-3,.gc-4,.gc-5,.gc-6,.gc-7,.gc-8,.gc-9,.gc-10,.gc-11,.gc-12 ，
 //**************************************************************
 //此时index为11就会执行以下函数，将所有的相应class都带上统一css”
 //**************************************************************
-.grid(@index,@list,@afterList,@imgList) when(@index>@grid-count){
- @{list}{
+.grid(@index,@list,@list-h,@afterList,@imgList) when(@index>@grid-count){
+@list-all:~"@{list},@{list-h}";
+@{list-all}{
   position: relative;
   display: block;
   float: left;

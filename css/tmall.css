@@ -114,50 +114,86 @@ select {
 .gc-1 {
   width: 8.33333333%;
 }
+.gch-1 {
+  height: 8.33333333%;
+}
 .gc-2 {
   width: 16.66666667%;
+}
+.gch-2 {
+  height: 16.66666667%;
 }
 .gc-3 {
   width: 25%;
 }
+.gch-3 {
+  height: 25%;
+}
 .gc-4 {
   width: 33.33333333%;
+}
+.gch-4 {
+  height: 33.33333333%;
 }
 .gc-5 {
   width: 41.66666667%;
 }
+.gch-5 {
+  height: 41.66666667%;
+}
 .gc-6 {
   width: 50%;
+}
+.gch-6 {
+  height: 50%;
 }
 .gc-7 {
   width: 58.33333333%;
 }
+.gch-7 {
+  height: 58.33333333%;
+}
 .gc-8 {
   width: 66.66666667%;
+}
+.gch-8 {
+  height: 66.66666667%;
 }
 .gc-9 {
   width: 75%;
 }
+.gch-9 {
+  height: 75%;
+}
 .gc-10 {
   width: 83.33333333%;
+}
+.gch-10 {
+  height: 83.33333333%;
 }
 .gc-11 {
   width: 91.66666667%;
 }
+.gch-11 {
+  height: 91.66666667%;
+}
 .gc-12 {
   width: 100%;
 }
-.gc-1,.gc-2,.gc-3,.gc-4,.gc-5,.gc-6,.gc-7,.gc-8,.gc-9,.gc-10,.gc-11,.gc-12 {
+.gch-12 {
+  height: 100%;
+}
+.gc-1,.gc-2,.gc-3,.gc-4,.gc-5,.gc-6,.gc-7,.gc-8,.gc-9,.gc-10,.gc-11,.gc-12,.gch-1,.gch-2,.gch-3,.gch-4,.gch-5,.gch-6,.gch-7,.gch-8,.gch-9,.gch-10,.gch-11,.gch-12 {
   position: relative;
   display: block;
   float: left;
 }
-.gc-1:after,.gc-2:after,.gc-3:after,.gc-4:after,.gc-5:after,.gc-6:after,.gc-7:after,.gc-8:after,.gc-9:after,.gc-10:after,.gc-11:after,.gc-12:after {
+.gc-1:after,.gch-1:after,.gc-2:after,.gch-2:after,.gc-3:after,.gch-3:after,.gc-4:after,.gch-4:after,.gc-5:after,.gch-5:after,.gc-6:after,.gch-6:after,.gc-7:after,.gch-7:after,.gc-8:after,.gch-8:after,.gc-9:after,.gch-9:after,.gc-10:after,.gch-10:after,.gc-11:after,.gch-11:after,.gc-12:after,.gch-12:after {
   display: block;
   content: '';
   clear: both;
 }
-.gc-1 img,.gc-2 img,.gc-3 img,.gc-4 img,.gc-5 img,.gc-6 img,.gc-7 img,.gc-8 img,.gc-9 img,.gc-10 img,.gc-11 img,.gc-12 img {
+.gc-1 img,.gch-1 img,.gc-2 img,.gch-2 img,.gc-3 img,.gch-3 img,.gc-4 img,.gch-4 img,.gc-5 img,.gch-5 img,.gc-6 img,.gch-6 img,.gc-7 img,.gch-7 img,.gc-8 img,.gch-8 img,.gc-9 img,.gch-9 img,.gc-10 img,.gch-10 img,.gc-11 img,.gch-11 img,.gc-12 img,.gch-12 img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -276,4 +312,13 @@ select {
 .hc-position._transition span.hc-position-mark span.hc-position-content,
 .hc-position._transition a.hc-position-mark span.hc-position-content {
   transition: all 0.3s;
+}
+.vl-middle {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.vl-middle div.vl-middle-content {
+  display: table-cell;
+  vertical-align: middle;
 }
