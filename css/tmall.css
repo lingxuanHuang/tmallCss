@@ -320,5 +320,6 @@ select {
 }
 .vl-middle div.vl-middle-content {
   display: table-cell;
+  float: none;
   vertical-align: middle;
 }
