@@ -313,13 +313,42 @@ select {
 .hc-position._transition a.hc-position-mark span.hc-position-content {
   transition: all 0.3s;
 }
+.vl-top {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.vl-top div.vl-top-content,
+.vl-top a.vl-top-content,
+.vl-top li.vl-top-content,
+.vl-top span.vl-top-content {
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+}
 .vl-middle {
   display: table;
   width: 100%;
   height: 100%;
 }
-.vl-middle div.vl-middle-content {
+.vl-middle div.vl-middle-content,
+.vl-middle a.vl-middle-content,
+.vl-middle li.vl-middle-content,
+.vl-middle span.vl-middle-content {
   display: table-cell;
   float: none;
   vertical-align: middle;
+}
+.vl-bottom {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.vl-bottom div.vl-bottom-content,
+.vl-bottom a.vl-bottom-content,
+.vl-bottom li.vl-bottom-content,
+.vl-bottom span.vl-bottom-content {
+  display: table-cell;
+  float: none;
+  vertical-align: bottom;
 }
